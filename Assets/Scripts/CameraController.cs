@@ -18,8 +18,8 @@ public class CameraController : MonoBehaviour {
     [SerializeField]
     private float _heightOfCamera;
 
-    private void Start() {      
-        if(Instance != null) {
+    private void Start() {
+        if (Instance != null) {
             Destroy(this);
         }
         Instance = this;
@@ -27,7 +27,7 @@ public class CameraController : MonoBehaviour {
 
     void Update() {
         mainCamera.transform.position = Vector3.Lerp(
-            mainCamera.transform.position, 
+            mainCamera.transform.position,
             new Vector3(Player.playerTransform.transform.position.x, Player.playerTransform.transform.position.y + _heightOfCamera, Player.playerTransform.transform.position.z + -_zPosAddition),
             _speedOfFollowing);
     }

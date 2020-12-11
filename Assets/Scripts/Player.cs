@@ -22,7 +22,7 @@ public class Player : MonoBehaviour {
     }
 
     void Update() {
-        Move();     
+        Move();
     }
 
     private void Move() {

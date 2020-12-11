@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerGun : MonoBehaviour
-{
+public class PlayerGun : MonoBehaviour {
+
     [SerializeField]
     protected float damage;
 
@@ -15,7 +15,12 @@ public class PlayerGun : MonoBehaviour
     [SerializeField]
     protected AudioClip shootSound;
 
-    public static void Shoot() {
+    public virtual void ChooseGun() { }
+
+    private void Start() {
+    }
+
+    public virtual void Shoot() {
         Debug.Log("Shoot");
     }
 

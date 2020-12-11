@@ -20,5 +20,4 @@ public static class MousePosition {
         Vector3 worldPosition = worldCamera.ScreenToWorldPoint(screenPosition);
         return worldPosition;
     }
-
 }

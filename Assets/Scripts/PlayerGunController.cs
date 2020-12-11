@@ -2,14 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerGunController : MonoBehaviour
-{
+public class PlayerGunController : MonoBehaviour {
+
+    public static PlayerGun choosenGun;
 
     private void Update() {
         if (Input.GetMouseButtonDown(0)) {
-            PlayerGun.Shoot();
+            choosenGun.Shoot();
         }
     }
-
-
 }

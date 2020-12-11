@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Knife : PlayerGun {
+public class Pistol : PlayerGun {
 
     public override void ChooseGun() {
         PlayerGunController.choosenGun = this;
     }
 
     public override void Shoot() {
-        Debug.Log("Knife");
+        Debug.Log("Pistol");
     }
 }
