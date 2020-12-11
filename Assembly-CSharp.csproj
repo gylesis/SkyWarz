@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\GroundPointFromMouse.cs" />
     <Compile Include="Assets\Scripts\Knife.cs" />
     <Compile Include="Assets\Scripts\MousePosition.cs" />
+    <Compile Include="Assets\Scripts\Pistol.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\PlayerGun.cs" />
     <Compile Include="Assets\Scripts\PlayerGunController.cs" />
